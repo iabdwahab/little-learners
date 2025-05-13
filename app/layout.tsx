@@ -1,5 +1,16 @@
 import type { Metadata } from 'next';
+import { Raleway, Outfit } from 'next/font/google';
 import './globals.css';
+
+const raleway = Raleway({
+  subsets: ['latin'],
+  weight: ['700', '800'],
+});
+
+const outfit = Outfit({
+  subsets: ['latin'],
+  weight: ['400', '500', '600'],
+});
 
 export const metadata: Metadata = {
   title: 'Little Learners',
@@ -13,7 +24,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body className="font-outfit">
+        <div className="container">{children}</div>
+      </body>
     </html>
   );
 }
