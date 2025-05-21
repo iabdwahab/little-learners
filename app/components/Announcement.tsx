@@ -1,6 +1,6 @@
 function Announcement() {
   return (
-    <div className="bg-orange-90 text-grey-15 flex items-center justify-center gap-2.5 rounded-md border-2 p-3 text-center">
+    <div className="bg-orange-90 text-grey-15 flex items-center justify-center gap-2.5 rounded-md border-2 p-3 text-center font-medium">
       <p className="text-sm md:text-base">Admission is Open, Grab your seat now</p>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="size-6">
         <path

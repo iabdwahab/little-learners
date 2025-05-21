@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import { outfit } from "./ui/fonts";
 import Announcement from "./components/Announcement";
+import Header from "./components/header/Index";
 
 export const metadata: Metadata = {
   title: "Little Learners - Home",
@@ -15,9 +16,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${outfit.className} bg-orange-97 pt-5 antialiased`}>
+      <body className={`${outfit.className} bg-orange-97 text-grey-10 pt-5 antialiased`}>
         <div className="mx-auto max-w-7xl px-2">
           <Announcement />
+          <Header />
           {children}
         </div>
       </body>
