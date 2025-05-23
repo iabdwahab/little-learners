@@ -1,7 +1,7 @@
 import NavbarItemMobile from "../components/header/NavbarItemMobile";
-import { NavbarLink } from "../types/headerNavbar";
+import { NavbarLinkInterface } from "../types/headerNavbar";
 
-export const navbarLinks: NavbarLink[] = [
+export const navbarLinks: NavbarLinkInterface[] = [
   {
     id: 1,
     title: "home",
@@ -34,4 +34,4 @@ export const navbarLinks: NavbarLink[] = [
   },
 ];
 
-export const navbarItemsElements = navbarLinks.map((link) => <NavbarItemMobile key={link.id} {...link} />);
+export const navbarItemsMobileElements = navbarLinks.map((link) => <NavbarItemMobile key={link.id} data={link} />);
