@@ -5,14 +5,15 @@ import NavbarDesktop from "./dekstop/NavbarDesktop";
 import NavbarToggleButton from "./NavbarToggleButton";
 import Logo from "./Logo";
 import { useEffect, useState } from "react";
-import { PathnameContext } from "next/dist/shared/lib/hooks-client-context.shared-runtime";
+import { usePathname } from "next/navigation";
 
 function Header() {
   const [isOpen, setIsOpen] = useState(false);
+  const pathname = usePathname();
 
   useEffect(() => {
     setIsOpen(false);
-  }, [PathnameContext]);
+  }, [pathname]);
 
   return (
     <header className="text-grey-15 relative mt-3.5 flex items-stretch justify-between rounded-lg border-2 bg-white">
