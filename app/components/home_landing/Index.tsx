@@ -1,0 +1,12 @@
+import ImageSide from "./ImageSide";
+import TextSide from "./TextSide";
+
+function HomeLanding() {
+  return (
+    <section className="grid items-center gap-10 lg:grid-cols-2">
+      <ImageSide />
+      <TextSide />
+    </section>
+  );
+}
+export default HomeLanding;
