@@ -1,4 +1,5 @@
-import NavbarItemMobile from "../components/header/NavbarItemMobile";
+import NavbarItemDesktop from "../components/header/dekstop/NavbarItemDesktop";
+import NavbarItemMobile from "../components/header/mobile/NavbarItemMobile";
 import { NavbarLinkInterface } from "../types/headerNavbar";
 
 export const navbarLinks: NavbarLinkInterface[] = [
@@ -35,3 +36,4 @@ export const navbarLinks: NavbarLinkInterface[] = [
 ];
 
 export const navbarItemsMobileElements = navbarLinks.map((link) => <NavbarItemMobile key={link.id} data={link} />);
+export const navbarItemsDesktopElements = navbarLinks.map((link) => <NavbarItemDesktop key={link.id} data={link} />);

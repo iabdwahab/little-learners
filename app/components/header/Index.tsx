@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
-import NavbarMobile from "./NavbarMobile";
+import NavbarMobile from "./mobile/NavbarMobile";
+import NavbarDesktop from "./dekstop/NavbarDesktop";
 
 function Header() {
   return (
@@ -9,10 +10,11 @@ function Header() {
         <Image src="/logo.svg" width={140} height={50} alt="Little Learners Logo" className="w-36 md:w-40" />
       </Link>
 
-      <button className="bg-orange-95 flex items-center rounded-r-md border-l-2 px-7 py-3">
+      <button className="bg-orange-95 flex items-center rounded-r-md border-l-2 px-7 py-3 lg:hidden">
         <Image src="/icons/menu.svg" width={30} height={30} alt="Menu Icon" />
       </button>
 
+      <NavbarDesktop />
       <NavbarMobile />
     </header>
   );

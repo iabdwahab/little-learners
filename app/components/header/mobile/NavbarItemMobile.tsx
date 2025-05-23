@@ -1,5 +1,5 @@
 import { NavbarLinkInterface } from "@/app/types/headerNavbar";
-import NavbarLink from "./NavbarLink";
+import NavbarLink from "../NavbarLink";
 
 function NavbarItemMobile({ data }: { data: NavbarLinkInterface }) {
   return (
