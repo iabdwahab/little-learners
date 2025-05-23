@@ -1,32 +1,37 @@
-export const navbarLinks = [
+import NavbarItemMobile from "../components/header/NavbarItemMobile";
+import { NavbarLink } from "../types/headerNavbar";
+
+export const navbarLinks: NavbarLink[] = [
   {
     id: 1,
-    name: "home",
+    title: "home",
     url: "/",
   },
   {
     id: 2,
-    name: "about us",
+    title: "about us",
     url: "/about",
   },
   {
     id: 3,
-    name: "academics",
+    title: "academics",
     url: "/academics",
   },
   {
     id: 4,
-    name: "admissions",
+    title: "admissions",
     url: "/admissions",
   },
   {
     id: 5,
-    name: "student life",
+    title: "student life",
     url: "/student-life",
   },
   {
     id: 6,
-    name: "contact",
+    title: "contact",
     url: "/contact",
   },
 ];
+
+export const navbarItemsElements = navbarLinks.map((link) => <NavbarItemMobile key={link.id} {...link} />);
