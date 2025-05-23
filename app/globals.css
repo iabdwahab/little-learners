@@ -21,7 +21,13 @@
 
   --font-outfit: "Outfit", sans-serif;
   --font-raleway: "Raleway", sans-serif;
+
+  --shadow-main: 6px 6px 1px;
 }
+
+/* .shadow-main {
+  box-shadow: 
+} */
 
 button {
   @apply cursor-pointer;
