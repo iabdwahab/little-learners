@@ -6,6 +6,6 @@ export const raleway = Raleway({
 });
 
 export const outfit = Outfit({
-  weight: ["400", "500", "600"],
+  weight: ["400", "500", "600", "800"],
   subsets: ["latin"],
 });
