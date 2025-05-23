@@ -2,7 +2,7 @@ import NavbarItemDesktop from "../components/header/dekstop/NavbarItemDesktop";
 import NavbarItemMobile from "../components/header/mobile/NavbarItemMobile";
 import { NavbarLinkInterface } from "../types/headerNavbar";
 
-export const navbarLinks: NavbarLinkInterface[] = [
+const navbarLinks: NavbarLinkInterface[] = [
   {
     id: 1,
     title: "home",
