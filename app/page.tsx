@@ -1,11 +1,11 @@
+import BenefitsSection from "./components/BenefitsSection";
 import HomeLanding from "./components/home_landing/Index";
-import SectionHeading from "./components/SectionHeading";
 
 export default function Home() {
   return (
-    <main className="[&>*]:my-20 lg:[&>*]:my-24">
+    <main className="[&>*]:mb-20 lg:[&>*]:mb-24">
       <HomeLanding />
-      <SectionHeading />
+      <BenefitsSection />
     </main>
   );
 }
