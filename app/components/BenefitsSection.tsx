@@ -8,7 +8,7 @@ function BenefitsSection() {
         <SectionHeading.Slogan>Children Deserve Bright Future</SectionHeading.Slogan>
         <SectionHeading.Title>Our Benefits</SectionHeading.Title>
         <SectionHeading.Description>
-          With a dedicated team of experienced educators, state-of-the-art facilities, and a comprehensive curriculum, we aim to lay a strong foundation for your child's future.
+          {`With a dedicated team of experienced educators, state-of-the-art facilities, and a comprehensive curriculum, we aim to lay a strong foundation for your child's future.`}
         </SectionHeading.Description>
       </SectionHeading>
 
