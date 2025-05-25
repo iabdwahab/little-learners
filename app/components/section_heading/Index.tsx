@@ -1,6 +1,12 @@
-import { ReactNode } from "react";
+import SectionHeadingContainer from "./SectionHeadingContainer";
+import Slogan from "./Slogan";
+import Title from "./Title";
+import Description from "./Description";
 
-function SectionHeading({ children, className }: { children: ReactNode; className?: string }) {
-  return <div className={`${className} grid justify-center gap-2.5 text-center lg:gap-3.5`}>{children}</div>;
-}
+const SectionHeading = Object.assign(SectionHeadingContainer, {
+  Slogan,
+  Title,
+  Description,
+});
+
 export default SectionHeading;
