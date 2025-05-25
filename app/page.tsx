@@ -4,7 +4,7 @@ import HomeLanding from "./components/home_landing/Index";
 export default function Home() {
   return (
     <main className="[&>*]:mb-20 lg:[&>*]:mb-24">
-      <HomeLanding />
+      <HomeLanding className="mt-6" />
       <BenefitsSection />
     </main>
   );
