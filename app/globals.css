@@ -25,9 +25,13 @@
   --shadow-main: 6px 6px 1px;
 }
 
-/* .shadow-main {
-  box-shadow: 
-} */
+@utility no-scrollbar {
+  &::-webkit-scrollbar {
+    display: none;
+  }
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
 
 button {
   @apply cursor-pointer;

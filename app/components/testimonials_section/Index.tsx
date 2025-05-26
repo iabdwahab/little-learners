@@ -1,4 +1,8 @@
+"use client";
+
 import SectionHeading from "../section_heading/Index";
+import BackButton from "./BackButton";
+import NextButton from "./NextButton";
 import TestimonialCard from "./TestimonialCard";
 
 function TestimonialsSection() {
@@ -11,6 +15,28 @@ function TestimonialsSection() {
           Our testimonials are heartfelt reflections of the nurturing environment we provide, where children flourish both academically and emotionally.
         </SectionHeading.Description>
       </SectionHeading>
+
+      <div className="flex items-center gap-10">
+        <BackButton className="hidden lg:block" />
+
+        <div className="flex flex-nowrap gap-10 overflow-hidden p-1.5">
+          <TestimonialCard name="1" />
+          <TestimonialCard name="2" />
+          <TestimonialCard name="3" />
+          <TestimonialCard name="4" />
+          <TestimonialCard name="5" />
+          <TestimonialCard name="6" />
+          <TestimonialCard name="7" />
+          <TestimonialCard name="8" />
+        </div>
+
+        <NextButton className="hidden lg:block" />
+      </div>
+
+      <div className="mt-10 flex items-center justify-center gap-5 lg:hidden">
+        <BackButton />
+        <NextButton />
+      </div>
     </section>
   );
 }
