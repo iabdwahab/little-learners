@@ -46,4 +46,4 @@ const testimonials: TestimonialInterface[] = [
   },
 ];
 
-export const testimonialsElements = testimonials.map((testimonial) => <TestimonialCard {...testimonial} />);
+export const testimonialsElements = testimonials.map((testimonial) => <TestimonialCard key={testimonial.id} {...testimonial} />);
