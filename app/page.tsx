@@ -1,4 +1,5 @@
 import BenefitsSection from "./components/BenefitsSection";
+import FAQsSection from "./components/faqs/Index";
 import HomeLanding from "./components/home_landing/Index";
 import TestimonialsSection from "./components/testimonials_section/Index";
 
@@ -8,6 +9,7 @@ export default function Home() {
       <HomeLanding className="mt-6" />
       <BenefitsSection />
       <TestimonialsSection />
+      <FAQsSection />
     </main>
   );
 }
