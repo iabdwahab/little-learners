@@ -1,10 +1,8 @@
 import Button from "./Button";
 
-function BackButton({ className }: { className?: string }) {
-  function handleClick() {}
-
+function BackButton({ className, onClick }: { className?: string; onClick: () => void }) {
   return (
-    <Button onClick={handleClick} className={`${className}`}>
+    <Button onClick={onClick} className={`${className}`}>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" className="fill-grey-20 stroke-grey-20 size-5">
         <path
           fillRule="evenodd"
