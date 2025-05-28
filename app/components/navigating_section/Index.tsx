@@ -1,5 +1,5 @@
+import { navigatingElements } from "@/app/data/navigatingSection";
 import SectionHeading from "../section_heading/Index";
-import PageCard from "./PageCard";
 
 function NavigatingSection() {
   return (
@@ -13,12 +13,7 @@ function NavigatingSection() {
         </SectionHeading.Description>
       </SectionHeading>
 
-      <div className="grid gap-10 lg:grid-cols-2">
-        <PageCard />
-        <PageCard />
-        <PageCard />
-        <PageCard />
-      </div>
+      <div className="grid gap-10 lg:grid-cols-2">{navigatingElements}</div>
     </section>
   );
 }
