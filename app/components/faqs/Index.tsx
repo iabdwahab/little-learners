@@ -13,10 +13,18 @@ function FAQsSection() {
       </SectionHeading>
 
       <div className="grid grid-cols-2 gap-4">
-        <FAQ />
-        <FAQ />
-        <FAQ />
-        <FAQ />
+        <div className="flex flex-col gap-4">
+          <FAQ />
+          <FAQ />
+          <FAQ />
+          <FAQ />
+        </div>
+        <div className="flex flex-col gap-4">
+          <FAQ />
+          <FAQ />
+          <FAQ />
+          <FAQ />
+        </div>
       </div>
     </section>
   );

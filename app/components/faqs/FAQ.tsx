@@ -1,18 +1,26 @@
+"use client";
+
+import { useRef, useState } from "react";
+import IconContainer from "./IconContainer";
+
 function FAQ() {
+  const [isOpen, setIsOpen] = useState(false);
+  const contentRef = useRef<HTMLDivElement>(null);
+
+  function toggleFAQ() {
+    setIsOpen((prev) => !prev);
+  }
+
   return (
-    <div className="rounded-[10px] border-2 bg-white">
-      <button className="flex w-full items-center justify-between gap-[10px] px-6 pt-[30px]">
+    <div className={`${isOpen ? "bg-white" : "bg-orange-95"} rounded-[10px] border-2`}>
+      <button onClick={toggleFAQ} className="flex w-full items-center justify-between gap-[10px] px-6 py-5">
         <h4 className="text-lg font-semibold">What are the school hours at Little Learners Academy?</h4>
-        <span className="bg-orange-97 rounded-md border-2 p-1.5">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" className="fill-grey-15 size-5">
-            <path fillRule="evenodd" d="M4.25 12a.75.75 0 0 1 .75-.75h14a.75.75 0 0 1 0 1.5H5a.75.75 0 0 1-.75-.75Z" clipRule="evenodd" />
-          </svg>
-        </span>
+        <IconContainer isOpen={isOpen} />
       </button>
 
-      <hr className="bg-grey-15 mx-auto mt-6 h-[2px] w-[calc(100%-60px)] border-none px-6" />
+      <hr className={`${isOpen ? "w-[calc(100%-60px)]" : "w-0"} bg-grey-15 mx-auto h-[2px] w-0 border-none duration-150`} />
 
-      <div>
+      <div ref={contentRef} className={`overflow-hidden duration-300`} style={{ maxHeight: isOpen ? `${contentRef.current?.scrollHeight}px` : 0 }}>
         <p className="px-6 pt-6 pb-[30px] font-medium">
           Our school hours are from 8:00 AM to 3:00 PM, Monday to Friday. We also offer extended care options for parents who need early drop-off or late pick-up.
         </p>
