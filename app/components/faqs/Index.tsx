@@ -1,3 +1,4 @@
+import { faqsElements } from "@/app/data/faqsSection";
 import SectionHeading from "../section_heading/Index";
 import FAQ from "./FAQ";
 
@@ -12,19 +13,8 @@ function FAQsSection() {
         </SectionHeading.Description>
       </SectionHeading>
 
-      <div className="grid grid-cols-2 gap-4">
-        <div className="flex flex-col gap-4">
-          <FAQ />
-          <FAQ />
-          <FAQ />
-          <FAQ />
-        </div>
-        <div className="flex flex-col gap-4">
-          <FAQ />
-          <FAQ />
-          <FAQ />
-          <FAQ />
-        </div>
+      <div className="grid gap-4">
+        <div className="flex flex-col gap-4">{faqsElements}</div>
       </div>
     </section>
   );
