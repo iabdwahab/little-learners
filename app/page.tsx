@@ -1,6 +1,7 @@
 import BenefitsSection from "./components/BenefitsSection";
 import FAQsSection from "./components/faqs/Index";
 import HomeLanding from "./components/home_landing/Index";
+import NavigatingSection from "./components/navigating_section/Index";
 import TestimonialsSection from "./components/testimonials_section/Index";
 
 export default function Home() {
@@ -10,6 +11,7 @@ export default function Home() {
       <BenefitsSection />
       <TestimonialsSection />
       <FAQsSection />
+      <NavigatingSection />
     </main>
   );
 }
