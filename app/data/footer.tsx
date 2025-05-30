@@ -1,21 +1,22 @@
 import CardInfo from "../components/footer/CardInfo";
 import { FooterCardInfoInterface, FooterCopyRightLinkInterface, FooterNavGroupInterface, FooterSocialLinkInterface } from "../types/footer";
 import NavGroup from "../components/footer/NavGroup";
+import { prefixPath } from "../utils/global";
 
 const footerSchoolInfo: FooterCardInfoInterface[] = [
   {
     id: 1,
-    iconSrc: "/icons/envelope.svg",
+    iconSrc: `${prefixPath}/icons/envelope.svg`,
     text: "hello@littlelearners.com",
   },
   {
     id: 2,
-    iconSrc: "/icons/phone.svg",
+    iconSrc: `${prefixPath}/icons/phone.svg`,
     text: "+91 91813 23 2309",
   },
   {
     id: 3,
-    iconSrc: "/icons/location.svg",
+    iconSrc: `${prefixPath}/icons/location.svg`,
     text: "Somewhere in the World",
   },
 ];
@@ -117,17 +118,17 @@ export const footerSocialLinks: FooterSocialLinkInterface[] = [
   {
     id: 1,
     href: "#",
-    iconSrc: "/icons/facebook.svg",
+    iconSrc: `${prefixPath}/icons/facebook.svg`,
   },
   {
     id: 2,
     href: "#",
-    iconSrc: "/icons/twitter.svg",
+    iconSrc: `${prefixPath}/icons/twitter.svg`,
   },
   {
     id: 3,
     href: "#",
-    iconSrc: "/icons/linkedin.svg",
+    iconSrc: `${prefixPath}/icons/linkedin.svg`,
   },
 ];
 
