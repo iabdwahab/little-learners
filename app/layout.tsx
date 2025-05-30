@@ -3,6 +3,7 @@ import "./globals.css";
 import { outfit } from "./ui/fonts";
 import Announcement from "./components/Announcement";
 import Header from "./components/header/Index";
+import Footer from "./components/footer/Index";
 
 export const metadata: Metadata = {
   title: "Little Learners - Home",
@@ -21,6 +22,7 @@ export default function RootLayout({
           <Announcement />
           <Header />
           {children}
+          <Footer />
         </div>
       </body>
     </html>
