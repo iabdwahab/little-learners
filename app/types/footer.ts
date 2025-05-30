@@ -9,3 +9,9 @@ export interface FooterNavGroupInterface {
   title: string;
   links: { href: string; text: string }[];
 }
+
+export interface FooterCopyRightLinkInterface {
+  id: number;
+  href: string;
+  text: string;
+}

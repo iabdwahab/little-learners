@@ -1,5 +1,5 @@
 import CardInfo from "../components/footer/CardInfo";
-import { FooterCardInfoInterface, FooterNavGroupInterface } from "../types/footer";
+import { FooterCardInfoInterface, FooterCopyRightLinkInterface, FooterNavGroupInterface } from "../types/footer";
 import NavGroup from "../components/footer/NavGroup";
 
 const footerSchoolInfo: FooterCardInfoInterface[] = [
@@ -92,6 +92,24 @@ const footerNavGroups: FooterNavGroupInterface[] = [
         text: "Map & Direction",
       },
     ],
+  },
+];
+
+export const footerCopyRightLinks: FooterCopyRightLinkInterface[] = [
+  {
+    id: 1,
+    href: "#",
+    text: "Terms of Service",
+  },
+  {
+    id: 2,
+    href: "#",
+    text: "Privacy Policy",
+  },
+  {
+    id: 3,
+    href: "#",
+    text: "Cookie Policy",
   },
 ];
 
