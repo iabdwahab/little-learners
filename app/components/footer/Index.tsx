@@ -6,14 +6,20 @@ import SocialLinks from "./SocialLinks";
 function Footer() {
   return (
     <div className="shadow-main mb-7 rounded-xl border-2 bg-white px-[30px] py-[60px]">
-      <LogoText />
-      <div className="mb-10 flex flex-col gap-5">{footerSchoolInfoElements}</div>
-      <div className="grid gap-[30px] min-[300px]:grid-cols-2">{footerNavSectionElements}</div>
+      <div className="gap-20 lg:flex">
+        <div>
+          <LogoText />
+          <div className="mb-10 flex flex-col gap-5 md:flex-row md:justify-center lg:flex-col lg:justify-start">{footerSchoolInfoElements}</div>
+        </div>
+        <div className="grid w-full gap-[30px] min-[300px]:grid-cols-2 lg:grid-cols-4">{footerNavSectionElements}</div>
+      </div>
 
       <hr className="border-grey-15 mt-[30px] mb-4" />
 
-      <CopyRightLinks />
-      <SocialLinks />
+      <div className="items-center justify-between lg:flex">
+        <CopyRightLinks />
+        <SocialLinks />
+      </div>
 
       <hr className="border-grey-15 mt-[30px] mb-4" />
 
