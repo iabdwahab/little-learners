@@ -1,9 +1,6 @@
 "use client";
 
-import { testimonialsElements } from "@/app/data/testimonialsSection";
 import SectionHeading from "../section_heading/Index";
-import BackButton from "./BackButton";
-import NextButton from "./NextButton";
 import TestimonialsWrapper from "./TestimonialsWrapper";
 
 function TestimonialsSection() {

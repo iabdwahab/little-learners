@@ -1,6 +1,5 @@
 import { faqsElements } from "@/app/data/faqsSection";
 import SectionHeading from "../section_heading/Index";
-import FAQ from "./FAQ";
 
 function FAQsSection() {
   return (
