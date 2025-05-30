@@ -16,7 +16,7 @@ function Header() {
   }, [pathname]);
 
   return (
-    <header className="text-grey-15 relative mt-3.5 flex items-stretch justify-between rounded-lg border-2 bg-white">
+    <header className="text-grey-15 relative z-50 mt-3.5 flex items-stretch justify-between rounded-lg border-2 bg-white">
       <Logo />
       <NavbarToggleButton isOpen={isOpen} setIsOpen={setIsOpen} />
       <NavbarMobile isOpen={isOpen} />
