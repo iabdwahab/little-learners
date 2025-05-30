@@ -1,5 +1,5 @@
 import CardInfo from "../components/footer/CardInfo";
-import { FooterCardInfoInterface, FooterCopyRightLinkInterface, FooterNavGroupInterface } from "../types/footer";
+import { FooterCardInfoInterface, FooterCopyRightLinkInterface, FooterNavGroupInterface, FooterSocialLinkInterface } from "../types/footer";
 import NavGroup from "../components/footer/NavGroup";
 
 const footerSchoolInfo: FooterCardInfoInterface[] = [
@@ -110,6 +110,24 @@ export const footerCopyRightLinks: FooterCopyRightLinkInterface[] = [
     id: 3,
     href: "#",
     text: "Cookie Policy",
+  },
+];
+
+export const footerSocialLinks: FooterSocialLinkInterface[] = [
+  {
+    id: 1,
+    href: "#",
+    iconSrc: "/icons/facebook.svg",
+  },
+  {
+    id: 2,
+    href: "#",
+    iconSrc: "/icons/twitter.svg",
+  },
+  {
+    id: 3,
+    href: "#",
+    iconSrc: "/icons/linkedin.svg",
   },
 ];
 

@@ -15,3 +15,9 @@ export interface FooterCopyRightLinkInterface {
   href: string;
   text: string;
 }
+
+export interface FooterSocialLinkInterface {
+  id: number;
+  href: string;
+  iconSrc: string;
+}
