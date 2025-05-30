@@ -3,3 +3,9 @@ export interface FooterCardInfoInterface {
   iconSrc: string;
   text: string;
 }
+
+export interface FooterNavGroupInterface {
+  id: number;
+  title: string;
+  links: { href: string; text: string }[];
+}

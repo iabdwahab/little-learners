@@ -1,5 +1,6 @@
 import CardInfo from "../components/footer/CardInfo";
-import { FooterCardInfoInterface } from "../types/footer";
+import { FooterCardInfoInterface, FooterNavGroupInterface } from "../types/footer";
+import NavGroup from "../components/footer/NavGroup";
 
 const footerSchoolInfo: FooterCardInfoInterface[] = [
   {
@@ -19,4 +20,80 @@ const footerSchoolInfo: FooterCardInfoInterface[] = [
   },
 ];
 
+const footerNavGroups: FooterNavGroupInterface[] = [
+  {
+    id: 1,
+    title: "Home",
+    links: [
+      {
+        href: "#",
+        text: "Features",
+      },
+      {
+        href: "#",
+        text: "Our Testimonials",
+      },
+      {
+        href: "#",
+        text: "FAQ",
+      },
+    ],
+  },
+  {
+    id: 2,
+    title: "Academics",
+    links: [
+      {
+        href: "#",
+        text: "Special Features",
+      },
+      {
+        href: "#",
+        text: "Gallery",
+      },
+    ],
+  },
+  {
+    id: 3,
+    title: "About Us",
+    links: [
+      {
+        href: "#",
+        text: "Our Mission",
+      },
+      {
+        href: "#",
+        text: "Our Vision",
+      },
+      {
+        href: "#",
+        text: "Awards and Recognition",
+      },
+      {
+        href: "#",
+        text: "History",
+      },
+      {
+        href: "#",
+        text: "Teachers",
+      },
+    ],
+  },
+  {
+    id: 4,
+    title: "Contact Us",
+    links: [
+      {
+        href: "#",
+        text: "Information",
+      },
+      {
+        href: "#",
+        text: "Map & Direction",
+      },
+    ],
+  },
+];
+
 export const footerSchoolInfoElements = footerSchoolInfo.map((info) => <CardInfo key={info.id} {...info} />);
+export const footerNavSectionElements = footerNavGroups.map((group) => <NavGroup key={group.id} {...group} />);
